@@ -6,7 +6,7 @@
 /*   By: anouisse <anouisse@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 11:14:31 by anouisse          #+#    #+#             */
-/*   Updated: 2026/10/18 12:39:58 by anouisse         ###   ########.fr       */
+/*   Updated: 2026/11/05 19:28:33 by anouisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
-
 	while (s[i])
 	{
 		i++;
 	}
-
 	return (i);
 }

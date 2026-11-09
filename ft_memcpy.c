@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                           :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anouisse <anouisse@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/16 19:42:37 by anouisse          #+#    #+#             */
-/*   Updated: 2026/10/18 12:26:05 by anouisse         ###   ########.fr       */
+/*   Created: 2026/11/05 19:24:26 by anouisse          #+#    #+#             */
+/*   Updated: 2026/11/05 19:24:51 by anouisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t				i;
 
 	if (!dest && !src)
+		return (dest);
+	if (n == 0)
 		return (dest);
 	d = (unsigned char *)dest;
 	s = (const unsigned char *)src;
